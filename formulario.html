@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Contato</title>
+<style>
+    label b {
+        color: red;
+    }
+
+    label {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<h1>Contato</h1>
+<form action="enviar.php" method="POST">
+    <label for="nome"><b></b>SEU NOME:<b>*</b></label><br>
+    <input type="text" name="username" placeholder="Nome do Usuario" required><br><br>
+    
+    <label for="nome">SEU EMAIL:<b>*</b></label><br>
+    <input type="email" name="email" placeholder="Seu email" required><br><br>
+    
+    <label for="assunto">ASSUNTO:<b>*</b></label><br>
+    <input type="text" id="assunto" name="assunto" required><br><br>
+
+    <label for="mensagem">MENSAGEM:<b>*</b></label><br>
+    <textarea id="mensagem" name="mensagem" rows="6" cols="50" required></textarea><br><br>
+
+    <label for="motivo">Selecione um motivo:</label><br>
+    <select id="motivo" name="motivo">
+        <option value="dúvida">Dúvida</option>
+        <option value="feedback">Feedback</option>
+        <option value="suporte">Suporte</option>
+    </select><br><br>
+
+    <input type="checkbox" id="copia" name="copia" value="sim">
+    <label for="copia">Enviar uma cópia para mim</label><br><br>
+
+    <input type="submit" value="Enviar Mensagem">
+</form>
+</body>
+</html>
