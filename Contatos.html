@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Contato</title>
+<style>
+    label b {
+        color: red;
+    }
+
+    label {
+        text-align: center;
+        font-size: 30px;
+        
+    }
+
+    body {
+        background-color: #facdcd83;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    form {
+        background-color: rgba(151, 89, 89, 0.397);
+        padding: 60px;
+        border-radius: 20px;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        background-color: #663030da;
+        border: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<form action="enviar.php" method="POST">
+    <label for="nome"><b></b>SEU NOME:<b>*</b></label><br>
+    <input type="text" name="username" placeholder="Nome do Usuario" required><br>
+    
+    <label for="nome">SEU EMAIL:<b>*</b></label><br>
+    <input type="email" name="email" placeholder="Seu email" required><br>
+    
+    <label for="assunto">ASSUNTO:<b>*</b></label><br>
+    <input type="text" id="assunto" name="assunto" required><br>
+
+    <label for="mensagem">MENSAGEM:<b>*</b></label><br>
+    <textarea id="mensagem" name="mensagem" rows="6" required></textarea><br>
+
+    <label for="motivo">Selecione um motivo:</label><br>
+    <select id="motivo" name="motivo">
+        <option value="dúvida">Dúvida</option>
+        <option value="feedback">Feedback</option>
+        <option value="suporte">Suporte</option>
+    </select><br>
+
+    <input type="checkbox" id="copia" name="copia" value="sim">
+    <label for="copia">Enviar uma cópia para mim</label><br>
+
+    <input type="submit" value="Enviar Mensagem">
+</form>
+</body>
+</html>

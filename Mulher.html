@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulher</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #facdcd83;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .header-banner {
+            background-image: url("banner1.jpg"); 
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 10px;
+        }
+
+        .item {
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .item .info {
+            padding: 10px;
+        }
+
+        .item h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item p {
+            margin: 5px 0 10px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .item span {
+            display: block;
+            font-weight:abold;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header-banner"></div>
+        <div class="gallery">
+            <div class="item">
+                <img src="modelo1.jpg" alt="Item 1">
+                <div class="info">
+                    <h3 style="color: rgb(170, 135, 123);">Primavera</h3>
+                    <p>É o momento perfeito para usar vestidos leves, saias esvoaçantes e camisas de manga curta. A primavera é uma época para celebrar a beleza da natureza e renovar nosso próprio estilo com peças que nos fazem sentir radiantes e revitalizados.</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="modelo2.jpg" alt="Item 2">
+                <div class="info">
+                    <h3 style="color: black;">Inverno</h3>
+                    <p>É a estação do frio, das noites mais longas e das paisagens cobertas de neve. Para se manter aquecido e elegante, as roupas de inverno oferecem uma variedade de opções, como casacos quentes, cachecóis macios e botas confortáveis. As roupas de inverno combinam funcionalidade e estilo, permitindo que você se mantenha confortável e chique, mesmo nas condições mais frias.</p>                  
+                </div>
+            </div>
+            <div class="item">
+                <img src="modelo3.jpg" alt="Item 3">
+                <div class="info">
+                    <h3 style="color: #6b9ab9;">Verão</h3>
+                    <p>Em meio a dias ensolarados, as roupas leves e confortáveis. É a época perfeita para mostrar seu estilo descontraído e aproveitar ao máximo cada momento sob o sol radiante do verão.</p>
+                </div>
+            </div>
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </div>
+</body>
+
+</html>
